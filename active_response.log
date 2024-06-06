@@ -1,0 +1,188 @@
+2024/06/06 13:58:32 y: {"version": 1, "origin": {"name": "responseActiva.py", "module": "active-response"}, "command": "check_keys", "parameters": {"keys": ["31168"]}}
+2024/06/06 13:59:34 y: Started
+2024/06/06 13:59:34 y: {
+    "version":1,
+    "origin":{
+        "name":"worker01",
+        "module":"wazuh-execd"
+    },
+    "command":"add",
+    "parameters":{
+        "extra_args":[],
+        "alert":{
+            "timestamp":"2021-02-01T20:58:44.830+0000",
+            "rule":{
+                "level":16,
+                "description":"Shellshock attack detected",
+                "id":"31168",
+                "mitre":{
+                    "id":["T1068","T1190"],
+                    "tactic":["Privilege Escalation","Initial Access"],
+                    "technique":["Exploitation for Privilege Escalation","Exploit Public-Facing Application"]
+                },
+                "info":"CVE-2014-6271https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
+                "firedtimes":2,
+                "mail":true,
+                "groups":["web","accesslog","attack"],
+                "pci_dss":["11.4"],
+                "gdpr":["IV_35.7.d"],
+                "nist_800_53":["SI.4"],
+                "tsc":["CC6.1","CC6.8","CC7.2","CC7.3"]
+            },
+            "agent":{
+                "id":"000",
+                "name":"wazuh-server"
+            },
+            "manager":{
+                "name":"wazuh-server"
+            },
+            "id":"1612213124.6448363",
+            "full_log":"192.168.0.223 - - [01/Feb/2021:20:58:43 +0000] \"GET / HTTP/1.1\" 200 612 \"-\" \"() { :; }; /bin/cat /etc/passwd\"",
+            "decoder":{
+                "name":"web-accesslog"
+            },
+            "data":{
+                "protocol":"GET",
+                "srcip":"192.168.0.223",
+                "id":"200",
+                "url":"/"
+            },
+            "location":"/var/log/nginx/access.log"
+        },
+        "program":"/var/ossec/active-response/bin/firewall-drop"
+    }
+}
+
+
+
+
+
+2024/06/06 13:59:34 y: {"version": 1, "origin": {"name": "custom-ar.py", "module": "active-response"}, "command": "check_keys", "parameters": {"keys": ["31168"]}}
+2024/06/06 13:59:55 y: Started
+2024/06/06 13:59:55 y: {
+    "version":1,
+    "origin":{
+        "name":"worker01",
+        "module":"wazuh-execd"
+    },
+    "command":"add",
+    "parameters":{
+        "extra_args":[],
+        "alert":{
+            "timestamp":"2021-02-01T20:58:44.830+0000",
+            "rule":{
+                "level":16,
+                "description":"Shellshock attack detected",
+                "id":"31168",
+                "mitre":{
+                    "id":["T1068","T1190"],
+                    "tactic":["Privilege Escalation","Initial Access"],
+                    "technique":["Exploitation for Privilege Escalation","Exploit Public-Facing Application"]
+                },
+                "info":"CVE-2014-6271https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
+                "firedtimes":2,
+                "mail":true,
+                "groups":["web","accesslog","attack"],
+                "pci_dss":["11.4"],
+                "gdpr":["IV_35.7.d"],
+                "nist_800_53":["SI.4"],
+                "tsc":["CC6.1","CC6.8","CC7.2","CC7.3"]
+            },
+            "agent":{
+                "id":"000",
+                "name":"wazuh-server"
+            },
+            "manager":{
+                "name":"wazuh-server"
+            },
+            "id":"1612213124.6448363",
+            "full_log":"192.168.0.223 - - [01/Feb/2021:20:58:43 +0000] \"GET / HTTP/1.1\" 200 612 \"-\" \"() { :; }; /bin/cat /etc/passwd\"",
+            "decoder":{
+                "name":"web-accesslog"
+            },
+            "data":{
+                "protocol":"GET",
+                "srcip":"192.168.0.223",
+                "id":"200",
+                "url":"/"
+            },
+            "location":"/var/log/nginx/access.log"
+        },
+        "program":"/var/ossec/active-response/bin/firewall-drop"
+    }
+}
+
+
+
+
+
+2024/06/06 13:59:55 y: {"version": 1, "origin": {"name": "active_response.py", "module": "active-response"}, "command": "check_keys", "parameters": {"keys": ["31168"]}}
+2024/06/06 14:00:01 y: 
+
+2024/06/06 14:00:01 y: Decoding JSON has failed, invalid input format
+2024/06/06 14:00:01 y: Invalid command
+2024/06/06 14:00:08 y: {"version": 1, "origin": {"name": "responseActiva.py", "module": "active-response"}, "command": "check_keys", "parameters": {"keys": ["31168"]}}
+2024/06/06 14:02:09 y: {"version": 1, "origin": {"name": "responseActiva.py", "module": "active-response"}, "command": "check_keys", "parameters": {"keys": ["31168"]}}
+2024/06/06 14:03:11 y: Started
+2024/06/06 14:03:11 y: {
+    "version":1,
+    "origin":{
+        "name":"worker01",
+        "module":"wazuh-execd"
+    },
+    "command":"add",
+    "parameters":{
+        "extra_args":[],
+        "alert":{
+            "timestamp":"2021-02-01T20:58:44.830+0000",
+            "rule":{
+                "level":16,
+                "description":"Shellshock attack detected",
+                "id":"31168",
+                "mitre":{
+                    "id":["T1068","T1190"],
+                    "tactic":["Privilege Escalation","Initial Access"],
+                    "technique":["Exploitation for Privilege Escalation","Exploit Public-Facing Application"]
+                },
+                "info":"CVE-2014-6271https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
+                "firedtimes":2,
+                "mail":true,
+                "groups":["web","accesslog","attack"],
+                "pci_dss":["11.4"],
+                "gdpr":["IV_35.7.d"],
+                "nist_800_53":["SI.4"],
+                "tsc":["CC6.1","CC6.8","CC7.2","CC7.3"]
+            },
+            "agent":{
+                "id":"000",
+                "name":"wazuh-server"
+            },
+            "manager":{
+                "name":"wazuh-server"
+            },
+            "id":"1612213124.6448363",
+            "full_log":"192.168.0.223 - - [01/Feb/2021:20:58:43 +0000] \"GET / HTTP/1.1\" 200 612 \"-\" \"() { :; }; /bin/cat /etc/passwd\"",
+            "decoder":{
+                "name":"web-accesslog"
+            },
+            "data":{
+                "protocol":"GET",
+                "srcip":"192.168.0.223",
+                "id":"200",
+                "url":"/"
+            },
+            "location":"/var/log/nginx/access.log"
+        },
+        "program":"/var/ossec/active-response/bin/firewall-drop"
+    }
+}
+
+
+
+
+
+2024/06/06 14:03:11 y: {"version": 1, "origin": {"name": "active_response.py", "module": "active-response"}, "command": "check_keys", "parameters": {"keys": ["31168"]}}
+2024/06/06 14:03:14 y: 
+
+2024/06/06 14:03:14 y: Decoding JSON has failed, invalid input format
+2024/06/06 14:03:14 y: Invalid command
