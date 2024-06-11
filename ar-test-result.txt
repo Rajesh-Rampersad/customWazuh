@@ -1,3 +1,7 @@
 Active response triggered by rule ID: <['31168']>
-Active response triggered by rule ID: <['31168']>
-Active response triggered by rule ID: <['31168']>
+Descrição: Shellshock attack detected
+Nível: 9
+Agente: wazuh-server (ID: 000)
+Localização: /var/log/nginx/access.log
+Log completo: 192.168.0.223 - - [01/Feb/2021:20:58:43 +0000] "GET / HTTP/1.1" 200 612 "-" "() { :; }; /bin/cat /etc/passwd"
+----
