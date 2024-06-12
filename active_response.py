@@ -39,13 +39,14 @@ def main():
         print("Erro: Alerta não encontrado no JSON")
         sys.exit(OS_INVALID)
 
-    nivel = [alert["id"]]
+    nivel = alert["rule"]["level"]
     keys = [alert["rule"]["id"]]
     if nivel >= 12:
         write_debug_file(sys.argv[0], f"Processing alert with rule ID: {keys}")
 
         # Personalizar o alerta escrevendo mais detalhes no arquivo de resultados
-        with open("ar-test-result.txt", mode="a") as test_file:
+        result_file_path = "ar-test-result.txt"
+        with open(result_file_path, mode="a") as test_file:
             test_file.write(
                 "Active response triggered by rule ID: <" + str(keys) + ">\n")
             test_file.write(f"Descrição: {alert['rule']['description']}\n")
@@ -55,11 +56,6 @@ def main():
             test_file.write(f"Localização: {alert['location']}\n")
             test_file.write(f"Log completo: {alert['full_log']}\n")
             test_file.write("----\n")
-
-    # Considerar o nível de alerta para imprimir a mensagem
-    # nivel = alert["rule"]["level"]
-    # if nivel >= 12:
-    #     print(f"Alerta crítica: Nível {nivel}")
 
     sys.exit(OS_SUCCESS)
 

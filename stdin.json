@@ -10,7 +10,7 @@
         "alert": {
             "timestamp": "2021-02-01T20:58:44.830+0000",
             "rule": {
-                "level": 9,
+                "level": 12,
                 "description": "Shellshock attack detected",
                 "id": "31168",
                 "mitre": {
